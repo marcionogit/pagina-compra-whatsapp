@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Enviar pedido</title>
+</head>
+<body>
+    <div class="formulario">
+
+        <div class="formulario-container">
+            <dt>
+                Retro
+            </dt>
+            <div>
+                <dd class="formulario-flex">
+                    <label for="pclGroselha">Groselha</label>
+                    <span>
+                        <button class="btnMenos">-</button>
+                        <input placeholder="0" type="number" id="pclGroselha" name="pclGroselha">
+                        <button class="btnMais">+</button>
+                        <div class="total">
+                            <p>Total: R$ </p>
+                            <p class="valorMult">0.00</p>
+
+                        </div>
+                    </span>
+                </dd>
+                <hr>
+            </div>
+
+            <div>
+                <dd class="formulario-flex">
+                    <label for="pclChiclete">Chiclete</label>
+                    <span>
+                        <button class="btnMenos">-</button>
+                        <input placeholder="0" type="number" id="pclChiclete" name="pclChiclete">
+                        <button class="btnMais">+</button>
+                        <div class="total">
+                            <p>Total: R$ </p>
+                            <p class="valorMult">0.00</p>
+
+                        </div>
+                    </span>
+                </dd>
+                <hr>
+            </div>
+
+            <div>
+                <dd class="formulario-flex">
+                    <label for="pclPinta">Pinta Lingua</label>
+                    <span>
+                        <button class="btnMenos">-</button>
+                        <input placeholder="0" type="number" id="pclPinta" name="pclPinta">
+                        <button class="btnMais">+</button>
+                        <div class="total">
+                            <p>Total: R$ </p>
+                            <p class="valorMult">0.00</p>
+
+                        </div>
+                    </span>
+                </dd>
+                <hr>
+            </div>
+        </div>
+        <div class="formulario-container">            
+            <dt>
+                Ao leite
+            </dt>
+
+            <div>
+                <dd class="formulario-flex">
+                    <label for="pclChocolate">Chocolate</label>
+                    <span>
+                        <button class="btnMenos">-</button>
+                        <input placeholder="0" type="number" id="pclChocolate" name="pclChocolate">
+                        <button class="btnMais">+</button>
+                        <div class="total">
+                            <p>Total: R$ </p>
+                            <p class="valorMult">0.00</p>
+
+                        </div>
+                    </span>
+                </dd>
+                <hr>
+            </div>
+            
+            <div>
+                <dd class="formulario-flex">
+                    <label for="pclMilho">Milho</label>
+                    <span>
+                        <button class="btnMenos">-</button>
+                        <input placeholder="0" type="number" id="pclMilho" name="pclMilho">
+                        <button class="btnMais">+</button>
+                        <div class="total">
+                            <p>Total: R$ </p>
+                            <p class="valorMult">0.00</p>
+                            
+                        </div>
+                    </span>
+                </dd>
+                <hr>
+            </div>
+            
+            <div>
+                <dd class="formulario-flex">
+                    <label for="pclCoco">Coco</label>
+                    <span>
+                        <button class="btnMenos">-</button>
+                        <input placeholder="0" type="number" id="pclCoco" name="pclCoco">
+                        <button class="btnMais">+</button>
+                        <div class="total">
+                            <p>Total: R$ </p>
+                            <p class="valorMult">0.00</p>
+                            
+                        </div>
+                    </span>
+                </dd>
+                <hr>
+            </div>
+            
+            <div>
+                <dd class="formulario-flex">
+                    <label for="pclCocoQueimado">Coco Queimado</label>
+                    <span>
+                        <button class="btnMenos">-</button>
+                        <input placeholder="0" type="number" id="pclCocoQueimado" name="pclCocoQueimado">
+                        <button class="btnMais">+</button>
+                        <div class="total">
+                            <p>Total: R$ </p>
+                            <p class="valorMult">0.00</p>
+                            
+                        </div>
+                    </span>
+                </dd>
+                <hr>
+            </div>
+            
+            <div>
+                <dd class="formulario-flex">
+                    <label for="pclLeiteCondensado">Leite Condensado</label>
+                    <span>
+                        <button class="btnMenos">-</button>
+                        <input placeholder="0" type="number" id="pclLeiteCondensado" name="pclLeiteCondensado">
+                        <button class="btnMais">+</button>
+                        <div class="total">
+                            <p>Total: R$ </p>
+                            <p class="valorMult">0.00</p>
+                            
+                        </div>
+                    </span>
+                </dd>
+                <hr>
+            </div>
+            
+            <div>
+                <dd class="formulario-flex">
+                    <label for="pclMorango">Morango</label>
+                    <span>
+                        <button class="btnMenos">-</button>
+                        <input placeholder="0" type="number" id="pclMorango" name="pclMorango">
+                        <button class="btnMais">+</button>
+                        <div class="total">
+                            <p>Total: R$ </p>
+                            <p class="valorMult">0.00</p>
+
+                        </div>
+                    </span>
+                </dd>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="final formulario-container">
+        <button id="finalizar">Finalizar Pedido</button>
+
+        <select name="bairro" id="bairro">
+            <option value="3.00">Centro</option>
+            <option value="5.00">Oásis</option>
+            <option value="5.00">Laranjeiras</option>
+        </select>
+
+        <select name="formaPgt" id="formaPgt">
+            <option value="DINHEIRO">DINHEIRO</option>
+            <option value="DÉBITO">DÉBITO</option>
+            <option value="CRÉDITO">CRÉDITO</option>
+            <option value="DÉBITO">PIX</option>
+        </select>
+
+        <div style="display: flex; flex-direction: row;">
+            <p>TOTAL: R$</p>
+            <P id="total"></P>
+        </div>
+    </div>
+
+    <div class="perguntaFinalizar ">
+        <button onclick="fechar()">x</button>
+
+        <p>finalizar pedido?</p>
+        <span>
+            <button onclick="enviarWhatsApp()">
+                <a href="#" id="caminho">SIM</a>
+            </button>
+            <button onclick="fechar()">NÃO</button>
+
+        </span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
