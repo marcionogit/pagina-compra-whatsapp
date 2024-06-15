@@ -122,4 +122,10 @@ input[type=number]::-webkit-inner-spin-button{
     select{
         padding: 6px 0;
     }
+    .perguntaFinalizar{
+        right:20vw;
+        width: 200px;
+        top: 145vh;
+
+    }
 }
