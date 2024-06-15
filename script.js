@@ -86,7 +86,7 @@ finalizar.addEventListener('click', ()=>{
             
             let label = labels[i].innerText;
             let quantidade = quantidades[i].value;
-            let valorUni = mapa[quantidades[0].id];
+            let valorUni = mapa[quantidades[i].id];
             let mensagem = `${label} ${valorUni} x ${quantidade}un R$ ${value.toFixed(2)}`
             
             listaWhatsApp.push(mensagem)
