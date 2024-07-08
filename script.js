@@ -2,6 +2,17 @@ const btnMenos = document.querySelectorAll('.btnMenos');
 const btnMais = document.querySelectorAll('.btnMais');
 const inputs = document.querySelectorAll('.valorMult');
 const tot = document.querySelector('#total');
+const btnIndisponivel = document.querySelectorAll('.indisponivel button');
+const inputIndisponivel = document.querySelectorAll('.indisponivel input');
+
+inputIndisponivel.forEach((input)=>{
+    input.disabled = 'true';
+})
+
+btnIndisponivel.forEach((btn)=>{
+    btn.disabled = 'true';
+})
+
 
 const labels = document.querySelectorAll('label');
 const quantidades = document.querySelectorAll('input');
@@ -39,12 +50,32 @@ const mapa = {
     'pclGroselha':1.50,
     'pclChiclete':1.50,
     'pclPinta':1.50,
-    'pclChocolate':2.80,
-    'pclMilho':2.80,
-    'pclCoco':2.80,
-    'pclCocoQueimado':2.80,
-    'pclLeiteCondensado':2.80,
-    'pclMorango':2.80,
+    'pclLove':3.00,
+    'pclFondueCoco':3.50,
+    'pclFondueMorango':3.50,
+
+    'pclChocolate':2.50,
+    'pclMilho':2.50,
+    'pclCoco':2.50,
+    'pclCocoQueimado':2.50,
+    'pclLeiteCondensado':2.50,
+    'pclMorango':2.50,
+
+    'pclUva':2.25,
+    'pclTangerina':2.25,
+    'pclMelancia':2.25,
+    'pclMaracuja':2.25,
+    'pclLimao':2.25,
+    'pclAbacaxi':2.25,
+
+    'pclTrufadoPreto':4.50,
+    'pclBeijinho':4.50,
+    'pclBrigadeiro':4.50,
+    'pclPacoca':4.50,
+    'pclSensacao':4.50,
+    'pclDuellitoBlack':4.50,
+    'pclDuellito':4.50,
+    'pclTrufadoBranco':4.50,
 }
 
 btnMais.forEach((button) =>{

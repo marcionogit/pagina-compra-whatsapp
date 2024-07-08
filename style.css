@@ -4,6 +4,10 @@ body{
     padding: 40px 0;
 }
 
+button{
+    cursor: pointer;
+}
+
 dt{
     margin-bottom: 20px;
     font-size: 20px;
@@ -20,11 +24,26 @@ hr{
     margin: auto;
 }
 
+.formulario-descImg{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: center;
+    font-weight: bold;
+}
+
+.formulario img{
+    max-width: 80px;
+    height: 95px;
+    object-fit: contain;
+    display: block;
+}
+
 .formulario-container{
     border: 1px solid rgba(0, 0, 0, 0.178);
     padding: 20px;
     margin-bottom: 20px;
     background-color: #fff;
+    position: relative;
 }
 
 .formulario dt{
@@ -46,6 +65,7 @@ label{
     width: 40px;
     text-align: center;
     -moz-appearance: textfield;
+    padding: 5px ;
 }
 
 input[type=number]::-webkit-inner-spin-button{
@@ -65,6 +85,10 @@ input[type=number]::-webkit-inner-spin-button{
     color: #fff;
     border:1px solid rgba(0, 0, 0, 0.308);
     border-radius: 10px;
+    transition: 0.2s;
+}
+#finalizar:hover{
+    background-color: rgb(219, 64, 64);
 }
 
 .perguntaFinalizar{
@@ -74,25 +98,43 @@ input[type=number]::-webkit-inner-spin-button{
     text-align: center;
     margin: 0 auto;
     position: absolute;
-    top: 50vh;
-    right:37vw;
-    background-color: rgb(209, 209, 209);
+    top: 50%;
+    right:50%;
+    transform: translate(50%, -50%);
+    background-color: #fff;
     padding: 20px;
     opacity: 0;
+    text-transform: uppercase;
+    z-index: -1;
 }
 
 .ativar{
     opacity: 1;
+    z-index: 1;
+    transition: 0.3s;
 }
 
 .final{
     max-width: 600px;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto; 
+    margin: 0 auto; ;
 }
 
+.btn-confirm{
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #a3a3a3;
+    border: 1px solid rgb(109, 109, 109);
+}
 
+.btnMais, .btnMenos{
+    padding: 5px 10px;
+}
+
+.indisponivel p.text-indisponivel{
+    display: inline !important;
+}
 
 @media(max-width: 650px) {
     label, p{
@@ -105,6 +147,15 @@ input[type=number]::-webkit-inner-spin-button{
 
     .formulario-flex{
         max-width: 300px;
+    }
+
+    .formulario-descImg{
+        grid-template-columns: 50px 1fr;
+        gap: 10px;
+    }
+
+    .formulario img{
+        height: 75px;
     }
 
     #finalizar{
@@ -123,9 +174,11 @@ input[type=number]::-webkit-inner-spin-button{
         padding: 6px 0;
     }
     .perguntaFinalizar{
-        right:30vw;
         width: 200px;
-        top: 70vh;
-
     }
+
+    .btnMais, .btnMenos{
+        padding: 5px 10px;
+    }
+    
 }
